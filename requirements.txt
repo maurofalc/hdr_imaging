@@ -1,0 +1,7 @@
+# TensorFlow is pinned below 2.16 on purpose: TF 2.16+ ships Keras 3 by default, which
+# renames several arguments used here (e.g. LeakyReLU(alpha=...)) and changes custom-layer
+# serialization. Staying on the Keras 2.x API keeps the notebooks running as written.
+tensorflow>=2.12,<2.16
+numpy>=1.23
+opencv-python>=4.5
+matplotlib>=3.5
